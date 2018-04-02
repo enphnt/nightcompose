@@ -1,0 +1,16 @@
+{
+  "name": "nightcompose",
+  "version": "1.0.0",
+  "description": "A Web Audio API/HTML5 canvas theremin played by nightwatchjs.",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server --port=3000"
+  },
+  "repository": "git@github.com:enphnt/nightcompose.git",
+  "author": "Nathan Phennel <nathanphennel@gmail.com>",
+  "license": "?",
+  "private": false,
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
