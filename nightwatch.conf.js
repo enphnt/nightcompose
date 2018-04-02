@@ -2,7 +2,7 @@ const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
 
 module.exports = {
-  "src_folders": ["compositions"],
+  "src_folders": ["tracks"],
   "custom_commands_path": "commands",
   "page_objects_path": "pages",
   "selenium": {
