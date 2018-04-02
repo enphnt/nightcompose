@@ -41,11 +41,11 @@ module.exports = {
             done();
           });
         },
-        one: 100,
-        two: 200,
-        three: 300,
-        four: 400,
-        eight: 800
+        one: 1000,
+        two: 2000,
+        three: 3000,
+        four: 4000,
+        eight: 8000
       }
     }
   }

@@ -2,7 +2,7 @@
 module.exports = {
   "Intro": function (client) {
     const iterations = 8;
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 4; i++) {
       for (let i = 0; i < iterations; i++) {
         client
           .moveToElement("canvas", 400, 200)
