@@ -4,13 +4,26 @@
   "description": "A Web Audio API/HTML5 canvas theremin played by nightwatchjs.",
   "main": "index.html",
   "scripts": {
-    "start": "lite-server --port=3000"
+    "start": "concurrently \"yarn serve\" \"yarn compose\" --kill-others --success=first",
+    "serve": "lite-server --port=3000 -c bs-config.js",
+    "compose": "nightwatch --config nightwatch.conf.js",
+    "debug": "node --inspect-brk node_modules/.bin/nightwatch --config nightwatch.conf.js"
   },
   "repository": "git@github.com:enphnt/nightcompose.git",
   "author": "Nathan Phennel <nathanphennel@gmail.com>",
-  "license": "?",
+  "license": "CC-BY-NC-1.0",
   "private": false,
   "dependencies": {
-    "lite-server": "^2.3.0"
+    "chromedriver": "^2.37.0",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "lite-server": "^2.3.0",
+    "nightwatch": "^0.9.20",
+    "selenium-server": "^3.11.0"
   }
 }
